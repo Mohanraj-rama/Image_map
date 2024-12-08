@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Copper Kitchen Restaurant</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #c06c84;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #8e44ad;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            flex: 1;
+        }
+
+        nav a:hover {
+            background-color: #5e3370;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 30%;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .product-card h3 {
+            padding: 10px;
+            background-color: #ecf0f1;
+            margin: 0;
+            text-align: center;
+        }
+
+        .product-card p {
+            padding: 0 10px 10px;
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        footer {
+            background-color: #c06c84;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .contact-section {
+            padding: 20px;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .contact-section h2 {
+            text-align: center;
+        }
+
+        .contact-section p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .footer-links {
+            margin-top: 10px;
+        }
+
+        .footer-links a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .products {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-card {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Copper Kitchen Restaurant</h1>
+    <p>Experience the finest culinary delights made with love and copper cookware</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="container">
+    <h2>Welcome to Copper Kitchen</h2>
+    <p>At Copper Kitchen, we believe in creating an unforgettable dining experience. Our chefs use the finest ingredients, and our signature copper cookware enhances the flavors, making every dish a masterpiece.</p>
+</section>
+
+<section id="menu" class="container">
+    <h2>Our Delicious Menu</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="gril.jpg" alt="Grilled Chicken">
+            <h3>Grilled Chicken</h3>
+            <p>Juicy, tender grilled chicken served with a side of crispy vegetables and a tangy sauce.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="vegetablecurry.jpg" alt="Vegetable Curry">
+            <h3>Vegetable Curry</h3>
+            <p>A rich and flavorful curry made with fresh vegetables and a blend of aromatic spices.</p>
+        </div>
+
+        <div class="product-card">
+            <img src="chocoloate.webp" alt="Chocolate Mousse">
+            <h3>Chocolate Mousse</h3>
+            <p>A silky, creamy dessert made with the finest dark chocolate and topped with whipped cream.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container contact-section">
+    <h2>Contact Us</h2>
+    <p>Have a question or want to make a reservation? Get in touch with us, and we'll be happy to assist you!</p>
+    <p>Email: contact@copperkitchen.com</p>
+    <p>Phone: (555) 123-4567</p>
+    <p>Address: 123 Copper Lane, Foodtown, FL 98765</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Copper Kitchen Restaurant</p>
+    <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+    </div>
+</footer>
+
+</body>
+</html>
